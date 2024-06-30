@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link
+      rel="icon"
+      href="images/Logo.png"
+      sizes="32x32 48x48"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <img src="images/Logo.png" alt="Logo" />
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="profile.html">Our Profile</a>
+          <a href="portofolio.html">Portfolio</a>
+          <a href="message.html">Message Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="welcome">
+        <h1 id="welcome-message">Hi, Welcome To Website</h1>
+        <p>Welcome to my company</p>
+        <div class="banner">
+          <img src="images/banner.jpg" alt="Banner Image" />
+        </div>
+      </section>
+
+      <section class="headquarters">
+        <h2>Our Headquarters</h2>
+        <div class="locations">
+          <div class="location">
+            <div
+              class="circle"
+              style="background-image: url('images/jakarta.jpeg')"
+            ></div>
+            <p>Jakarta</p>
+          </div>
+          <div class="location">
+            <div
+              class="circle"
+              style="background-image: url('images/bandung.jpeg')"
+            ></div>
+            <p>Bandung</p>
+          </div>
+          <div class="location">
+            <div
+              class="circle"
+              style="background-image: url('images/surabaya.jpeg')"
+            ></div>
+            <p>Surabaya</p>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <h2>Message Us</h2>
+        <form id="contact-form">
+          <label for="name">Nama:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="dob">Tanggal Lahir:</label>
+          <input type="date" id="dob" name="dob" required />
+
+          <label>Jenis Kelamin:</label>
+          <div class="gender-options">
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="Laki-Laki"
+              required
+            />
+            <label for="male">Laki-Laki</label>
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="Perempuan"
+              required
+            />
+            <label for="female">Perempuan</label>
+          </div>
+
+          <label for="message">Pesan:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+
+        <div id="form-output"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Created By Ghalib</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
